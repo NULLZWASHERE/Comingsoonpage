@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" class="dark-theme">
+<head>
+    <title>404 - Page Not Found | Zekoro</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+
+    <style>
+        body, #wrap {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background-image: url('/images/background-login.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            height: 44px;
+            display: flex;
+            align-items: center;
+            padding: 0 16px;
+            background: rgba(0,0,0,0.6);
+            backdrop-filter: blur(8px);
+        }
+
+        .navbar img {
+            height: 28px;
+        }
+
+        .container-main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: calc(100vh - 44px);
+        }
+
+        .error-box {
+            width: 420px;
+            padding: 40px;
+            border-radius: 16px;
+            background: rgba(0,0,0,0.65);
+            backdrop-filter: blur(10px);
+            text-align: center;
+            color: #fff;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+        }
+
+        .logo {
+            width: 90px;
+            height: 90px;
+            object-fit: contain;
+            margin-bottom: 10px;
+        }
+
+        .error-code {
+            font-size: 72px;
+            font-weight: bold;
+            color: #ffffff;
+            line-height: 1;
+            margin-bottom: 10px;
+        }
+
+        .title {
+            font-size: 26px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 15px;
+            opacity: 0.85;
+            margin-bottom: 25px;
+        }
+
+        .status {
+            font-size: 15px;
+            padding: 12px;
+            border-radius: 10px;
+            background: rgba(255,255,255,0.08);
+            margin-bottom: 20px;
+        }
+
+        .home-btn {
+            display: inline-block;
+            background: #00b06f;
+            color: white;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+
+        .home-btn:hover {
+            background: #009660;
+        }
+
+        .footer-text {
+            margin-top: 20px;
+            font-size: 13px;
+            opacity: 0.65;
+        }
+    </style>
+</head>
+
+<body>
+<div id="wrap">
+
+    <div class="navbar">
+        <img src="https://zekoro.serversiding.pro/images/zekoro.png" alt="Zekoro">
+    </div>
+
+    <main class="container-main">
+        <div class="error-box">
+
+            <img class="logo" src="https://zekoro.serversiding.pro/images/zekoro.png" alt="Zekoro Logo">
+
+            <div class="error-code">404</div>
+
+            <div class="title">Page Not Found</div>
+
+            <div class="subtitle">
+                The page you're looking for doesn't exist or may have been moved.
+            </div>
+
+            <div class="status">
+                The requested resource could not be found.
+            </div>
+
+            <a href="/" class="home-btn">Return Home</a>
+
+            <div class="footer-text">
+                Zekoro • Error 404
+            </div>
+
+        </div>
+    </main>
+
+</div>
+</body>
+</html>
