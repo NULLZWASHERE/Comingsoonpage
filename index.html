@@ -1,18 +1,11 @@
+<!DOCTYPE html>
 <html lang="en" class="dark-theme">
 <head>
-    <title>Zekoro - Coming Soon</title>
+    <title>404 - Page Not Found | Zekoro</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="/FoundationCss.css">
-    <link rel="stylesheet" href="/ReactStyleGuide.css">
-    <link rel="stylesheet" href="/StyleGuide.css">
-    <link rel="stylesheet" href="/Builder.css">
-    <link rel="stylesheet" href="/Navigation.css">
-    <link rel="stylesheet" href="/Footer.css">
-
     <link rel="icon" type="image/png" href="/images/favicon.png">
 
     <style>
@@ -23,8 +16,22 @@
             background-image: url('/images/background-login.png');
             background-size: cover;
             background-position: center;
+            background-repeat: no-repeat;
             overflow: hidden;
             font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            height: 44px;
+            display: flex;
+            align-items: center;
+            padding: 0 16px;
+            background: rgba(0,0,0,0.6);
+            backdrop-filter: blur(8px);
+        }
+
+        .navbar img {
+            height: 28px;
         }
 
         .container-main {
@@ -34,7 +41,7 @@
             min-height: calc(100vh - 44px);
         }
 
-        .coming-soon-box {
+        .error-box {
             width: 420px;
             padding: 40px;
             border-radius: 16px;
@@ -52,6 +59,14 @@
             margin-bottom: 10px;
         }
 
+        .error-code {
+            font-size: 72px;
+            font-weight: bold;
+            color: #ffffff;
+            line-height: 1;
+            margin-bottom: 10px;
+        }
+
         .title {
             font-size: 26px;
             font-weight: bold;
@@ -65,83 +80,64 @@
         }
 
         .status {
-            font-size: 16px;
+            font-size: 15px;
             padding: 12px;
             border-radius: 10px;
             background: rgba(255,255,255,0.08);
             margin-bottom: 20px;
         }
 
-        .team {
-            font-size: 14px;
-            opacity: 0.7;
-        }
-
-        .dot {
+        .home-btn {
             display: inline-block;
-            width: 8px;
-            height: 8px;
-            border-radius: 50%;
-            background: #00ff9d;
-            margin-right: 6px;
-            animation: pulse 1.2s infinite;
-        }
-
-        @keyframes pulse {
-            0% { transform: scale(1); opacity: 1; }
-            50% { transform: scale(1.4); opacity: 0.6; }
-            100% { transform: scale(1); opacity: 1; }
-        }
-
-        .navbar {
-            height: 44px;
-            display: flex;
-            align-items: center;
-            padding: 0 16px;
-            background: rgba(0,0,0,0.6);
+            background: #00b06f;
             color: white;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.2s;
         }
 
-        .navbar img {
-            height: 28px;
+        .home-btn:hover {
+            background: #009660;
+        }
+
+        .footer-text {
+            margin-top: 20px;
+            font-size: 13px;
+            opacity: 0.65;
         }
     </style>
-
-    <script>
-        (function () {
-            var t = localStorage.getItem('zekoro-theme');
-            document.documentElement.className = (t === 'light') ? 'light-theme' : 'dark-theme';
-        })();
-    </script>
 </head>
 
 <body>
 <div id="wrap">
 
-    <!-- NAVBAR -->
     <div class="navbar">
         <img src="https://zekoro.serversiding.pro/images/zekoro.png" alt="Zekoro">
     </div>
 
-    <!-- MAIN -->
     <main class="container-main">
-        <div class="coming-soon-box">
+        <div class="error-box">
 
-            <img class="logo" src="https://zekoro.serversiding.pro/images/zekoro.png" alt="Logo">
+            <img class="logo" src="https://zekoro.serversiding.pro/images/zekoro.png" alt="Zekoro Logo">
 
-            <div class="title">Coming Soon</div>
+            <div class="error-code">404</div>
+
+            <div class="title">Page Not Found</div>
 
             <div class="subtitle">
-                Zekoro is currently under development
+                The page you're looking for doesn't exist or may have been moved.
             </div>
 
             <div class="status">
-                <span class="dot"></span>
-                Now being worked on by Redwing team
+                The requested resource could not be found.
             </div>
 
-            <div class="team">
-                Please check back later for updates.
+            <a href="/" class="home-btn">Return Home</a>
+
+            <div class="footer-text">
+                Zekoro • Error 404
             </div>
 
         </div>
